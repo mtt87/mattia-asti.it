@@ -1,9 +1,10 @@
 body {
-    background-color:#fefefe
+    background-color:#fefefe;
 }
 .ico {
     border-radius:11px;
-    margin:0 auto 15px
+    margin:0 auto 15px;
+    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.30), inset 0 3px 5px 3px rgba(0, 0, 0, 0.35);
 }
 #t1, #t2 {
     float:none;
@@ -14,7 +15,8 @@ body {
 }
 #testo-top {
     z-index:1000;
-    background-color:#fefefe;
+    background-color: #fefefe;
+    background: rgba(254, 254, 254, 0.85);
     width: 100%;
 }
 #content {
@@ -33,17 +35,15 @@ body {
         width:90%;
         margin-bottom:15px;
         border-radius:23px;
-        -webkit-transition:.5s;
-        -moz-transition:.5s;
-        -o-transition:.5s;
-        transition:.5s;
+        -webkit-transition: width .5s, opacity .5s;
+        -moz-transition: width .5s, opacity .5s;
+        -o-transition: width .5s, opacity .5s;
+        transition: width .5s, opacity .5s;
         opacity:.9;
     }
     .ico:hover {
         width:100%;
         opacity:1;
-        zoom:1.2;
-        scale()
     }
     .row-ico {
         min-height:236px

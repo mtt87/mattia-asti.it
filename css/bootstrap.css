@@ -59,7 +59,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 dfn {
   font-style: italic;
@@ -269,7 +269,7 @@ p {
 .lead {
   margin-bottom: 20px;
   font-size: 16.099999999999998px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
@@ -429,7 +429,7 @@ dd {
   line-height: 1.428571429;
 }
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 dd {
   margin-left: 0;
@@ -2590,7 +2590,7 @@ a.thumbnail:focus {
 .close {
   float: right;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;

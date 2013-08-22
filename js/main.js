@@ -6,7 +6,7 @@ var refresh = setInterval(rititola, 1000);
 $(".ico").mouseenter(function() {
     clearInterval(refresh);
     var e = $(this).attr("alt");
-    $("#t3 h2").text("Find me on " + e);
+    $("#t3 h2").text(e);
 });
 $(".ico").mouseleave(function() {
     refresh = setInterval(rititola, 1000);
