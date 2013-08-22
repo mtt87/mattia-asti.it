@@ -37,7 +37,7 @@ body {
         -moz-transition:.5s;
         -o-transition:.5s;
         transition:.5s;
-        opacity:.9
+        opacity:.9;
     }
     .ico:hover {
         width:100%;
