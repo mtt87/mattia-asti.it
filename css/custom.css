@@ -2,9 +2,18 @@ body {
     background-color:#fefefe;
 }
 .ico {
-    border-radius:11px;
     margin:0 auto 15px;
-    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.30), inset 0 3px 5px 3px rgba(0, 0, 0, 0.35);
+    -webkit-border-radius:11px;
+    -moz-border-radius:11px;
+    border-radius:11px;
+    -webkit-box-shadow:0 10px 20px 1px rgba(0, 0, 0, 0.30), inset 0 3px 5px 3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:0 10px 20px 1px rgba(0, 0, 0, 0.30), inset 0 3px 5px 3px rgba(0, 0, 0, 0.35);
+    box-shadow:0 10px 20px 1px rgba(0, 0, 0, 0.30), inset 0 3px 5px 3px rgba(0, 0, 0, 0.35);
+    -webkit-transform:scale(1) rotate(0deg) translate3d(0, 0, 0);
+    -moz-transform:scale(1) rotate(0deg) translate3d(0, 0, 0);
+    -ms-transform:scale(1) rotate(0deg) translate3d(0, 0, 0);
+    -o-transform:scale(1) rotate(0deg) translate3d(0, 0, 0);
+    transform:scale(1) rotate(0deg) translate3d(0, 0, 0);
 }
 #t1, #t2 {
     float:none;
@@ -27,22 +36,30 @@ body {
 }
 @media (min-width:768px) {
     .ico {
-        border-radius:18px
+        -webkit-border-radius:18px;
+        -moz-border-radius:18px;
+        border-radius:18px;
     }
 }
 @media (min-width:992px) {
     .ico {
         width:90%;
         margin-bottom:15px;
+        -webkit-border-radius:23px;
+        -moz-border-radius:23px;
         border-radius:23px;
-        -webkit-transition: width .5s, opacity .5s;
-        -moz-transition: width .5s, opacity .5s;
-        -o-transition: width .5s, opacity .5s;
-        transition: width .5s, opacity .5s;
+        -webkit-transition: -webkit-transform .2s linear, opacity .5s;
+        -moz-transition: -moz-transform .2s linear, opacity .5s;
+        -o-transition: -o-transform .2s linear, opacity .5s;
+        transition: transform .2s linear, opacity .5s;
         opacity:.9;
     }
     .ico:hover {
-        width:100%;
+        -webkit-transform:scale(1.1) rotate(0deg) translate3d(0, 0, 0);
+        -moz-transform:scale(1.1) rotate(0deg) translate3d(0, 0, 0);
+        -ms-transform:scale(1.1) rotate(0deg) translate3d(0, 0, 0);
+        -o-transform:scale(1.1) rotate(0deg) translate3d(0, 0, 0);
+        transform:scale(1.1) rotate(0deg) translate3d(0, 0, 0);
         opacity:1;
     }
     .row-ico {
