@@ -35,8 +35,9 @@
     function insertInstagramPics(pics) {
         /*jshint camelcase: false */
         for (var i = 0; i < instagramCount; i++) {
+            var imgUrl = pics[i].images.low_resolution.url.replace('http://', '//');
             $('.instagram-feed').append('<div class="pure-u-1-3 pure-u-sm-4-24 pure-u-md-4-24 pure-u-lg-3-24">' +
-                '<a href="' + pics[i].link + '"><img class="pure-img" src="' + pics[i].images.low_resolution.url + '"></div>');
+                '<a href="' + pics[i].link + '"><img class="pure-img" src="' + imgUrl + '"></div>');
         }
         /*jshint camelcase: true */
     }
