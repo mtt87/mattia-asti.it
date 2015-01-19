@@ -36,7 +36,6 @@ header {
   display: inline-block;
   margin-left: 15px;
 }
-
 .contact-me-btn {
   position: absolute;
   right: 15px;
@@ -61,7 +60,7 @@ header {
   margin-right: 20px;
 }
 .section {
-  padding: 20px 0;
+  padding: 25px 0;
 }
 .section-whoami {
   line-height: 2.2em;

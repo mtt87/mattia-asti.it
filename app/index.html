@@ -6,9 +6,259 @@
     <meta name="description" content="Italian Web Developer based in London">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Mattia Asti - Web Developer</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    header,
+section{
+    display: block;
+}
 
+
+
+
+
+html {
+    font-size: 100%; 
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+
+
+html{
+    font-family: sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+strong {
+    font-weight: bold;
+}
+
+
+
+p{
+    margin: 1em 0;
+}
+
+
+
+.pure-g {
+    letter-spacing: -0.31em; 
+    *letter-spacing: normal; 
+    *word-spacing: -0.43em; 
+    text-rendering: optimizespeed; 
+
+    
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+
+    
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+    
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+.pure-g {
+    word-spacing: -0.43em;
+}
+
+
+.pure-g [class *= "pure-u"] {
+    font-family: sans-serif;
+}
+
+.pure-u-1{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-u-1{
+    width: 100%;
+}
+.pure-button {
+    
+    display: inline-block;
+    *display: inline; 
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.pure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+    *font-size: 90%; 
+    *overflow: visible; 
+    padding: 0.5em 1em;
+    color: #444; 
+    color: rgba(0, 0, 0, 0.80); 
+    *color: #444; 
+    border: 1px solid #999;  
+    border: none rgba(0, 0, 0, 0);  
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+
+.pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+html,
+.pure-g [class *= "pure-u"] {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1{
+  font-family: "Open Sans", sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.btn-sm {
+  font-size: .9em;
+}
+.btn-red {
+  background-color: #F44336;
+  color: #fff;
+}
+.container {
+  max-width: 750px;
+  font-size: 1.35em;
+  margin: 0 auto;
+}
+header {
+  background-color: #3F51B5;
+}
+.img-face {
+  display: none;
+}
+.title {
+  display: inline-block;
+  margin-left: 15px;
+}
+.contact-me-btn {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+.title {
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: .81em;
+  letter-spacing: 1px;
+}
+.box {
+  padding: 25px;
+}
+.section {
+  padding: 25px 0;
+}
+.section-whoami {
+  line-height: 2.2em;
+}
+
+@media screen and (min-width: 48em) {
+  .img-face {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzAxNCA3OS4xNTY3OTcsIDIwMTQvMDgvMjAtMDk6NTM6MDIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQTcwM0UwMzk3ODAxMUU0QjEyQUExNzY3NDJFQjExQSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQTcwM0UwNDk3ODAxMUU0QjEyQUExNzY3NDJFQjExQSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNBNzAzRTAxOTc4MDExRTRCMTJBQTE3Njc0MkVCMTFBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNBNzAzRTAyOTc4MDExRTRCMTJBQTE3Njc0MkVCMTFBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJ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)
+  }
+  .title {
+    text-align: center;
+    display: block;
+  }
+}
+</style>
+
+<script>
+    /*!
+loadCSS: load a CSS file asynchronously.
+[c]2014 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+function loadCSS( href, before, media ){
+    "use strict";
+    var ss = window.document.createElement( "link" );
+    var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+    var sheets = window.document.styleSheets;
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+    ss.media = "only x";
+    // inject link
+    ref.parentNode.insertBefore( ss, ref );
+    // This function sets the link's media back to `all` so that the stylesheet applies once it loads
+    // It is designed to poll until document.styleSheets includes the new sheet.
+    function toggleMedia(){
+        var defined;
+        for( var i = 0; i < sheets.length; i++ ){
+            if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
+                defined = true;
+            }
+        }
+        if( defined ){
+            ss.media = media || "all";
+        }
+        else {
+            setTimeout( toggleMedia );
+        }
+    }
+    toggleMedia();
+    return ss;
+}
+loadCSS('/styles/vendor.css');
+loadCSS('/styles/main.css');
+loadCSS('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+loadCSS('http://fonts.googleapis.com/css?family=Open+Sans:700,400');
+</script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <noscript><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></noscript>
+
+    <noscript>
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/pure/pure.css" />
@@ -19,6 +269,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    </noscript>
 
 </head>
 
@@ -54,15 +305,6 @@
         </div>
     </section>
 
-    <section id="instagram" class="section">
-        <div class="text-center">
-            <p>Moments</p>
-            <i class="loading-instagram fa fa-spin fa-circle-o-notch fa-3x"></i>
-        </div>
-        <div class="pure-g instagram-feed">
-        </div>
-    </section>
-
     <section id="blog" class="section">
         <div class="pure-g">
             <div class="pure-u-1 text-center">
@@ -70,6 +312,15 @@
                     I have a <a href="https://blog.mattia-asti.it" class="pure-button">Blog</a> also
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="instagram" class="section">
+        <div class="text-center">
+            <p>Moments</p>
+            <i class="loading-instagram fa fa-spin fa-circle-o-notch fa-3x"></i>
+        </div>
+        <div class="pure-g instagram-feed">
         </div>
     </section>
 
@@ -118,28 +369,14 @@
 
     <footer>Mattia Asti #2015</footer>
 
-
-    <script type="text/javascript">
-    WebFontConfig = {
-        google: {
-            families: ['Open+Sans:400,700:latin', 'Roboto:400,700:latin']
-        }
-    };
-    (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-    </script>
-
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" async></script>
     <!-- endbuild -->
 </body>
 
