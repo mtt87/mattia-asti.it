@@ -4,7 +4,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');
-var deploySettings = require('./deploySettings.json') || {
+var deploySettings =  {
     "root": "dist",
     "username": process.env.deployUser,
     "hostname": process.env.deployHost,
