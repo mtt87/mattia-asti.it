@@ -3,6 +3,13 @@
 // generated on 2015-01-01 using generator-gulp-webapp 0.2.0
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var runSequence = require('run-sequence');
+var deploySettings = {
+    "root": "dist",
+    "username": process.env.deployUser,
+    "hostname": process.env.deployHost,
+    "destination": process.env.deployDest
+}
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.css')
@@ -111,4 +118,13 @@ gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () 
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
+});
+
+gulp.task('rsync', function() {
+    return gulp.src('dist/**/*.*')
+        .pipe($.rsync(deploySettings));
+});
+
+gulp.task('deploy', function() {
+    runSequence('clean', 'build', 'rsync');
 });

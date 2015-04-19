@@ -3,6 +3,12 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "gulp serve",
+    "build": "gulp",
+    "deploy": "gulp deploy"
+  },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
     "connect": "^3.3.4",
@@ -20,12 +26,14 @@
     "gulp-livereload": "^3.7.0",
     "gulp-load-plugins": "^0.8.0",
     "gulp-minify-html": "^0.1.8",
+    "gulp-rsync": "0.0.5",
     "gulp-size": "^1.2.0",
     "gulp-uglify": "^1.1.0",
     "gulp-useref": "^1.1.1",
     "jshint-stylish": "^1.0.0",
     "main-bower-files": "^2.5.0",
     "opn": "^1.0.1",
+    "run-sequence": "^1.0.2",
     "serve-index": "^1.6.1",
     "serve-static": "^1.8.1",
     "wiredep": "^2.2.2"

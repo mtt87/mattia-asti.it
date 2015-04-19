@@ -29,7 +29,7 @@
     }
   });
 
-  $.get('https://api.import.io/store/data/e08d3a17-8cef-47bf-848a-dcf04d153478/_query?input/webpage/url=https%3A%2F%2Fblog.mattia-asti.it%2F&_user=b2fc857a-874c-4a65-ad0f-d64ed0a65e29&_apikey=v%2BCUI9Mo%2B81KcD6UEGjSU9aJwhw%2Fuga%2FkjAOnCKZIt%2FptIjgMGLkArEOoQmd3KJLcSDx5NCIsId3feDkS8yMsg%3D%3D',
+  $.get('https://api.import.io/store/data/0faf5ec7-adaf-4ec7-8bda-0df82852ef77/_query?input/webpage/url=https%3A%2F%2Fblog.mattia-asti.it%2F&_user=b2fc857a-874c-4a65-ad0f-d64ed0a65e29&_apikey=b2fc857a-874c-4a65-ad0f-d64ed0a65e29%3Av%2BCUI9Mo%2B81KcD6UEGjSU9aJwhw%2Fuga%2FkjAOnCKZIt%2FptIjgMGLkArEOoQmd3KJLcSDx5NCIsId3feDkS8yMsg%3D%3D',
     function(data) {
       $('#loader-blog').hide();
       insertBlog(data.results);
@@ -41,8 +41,9 @@
         '<div class="pure-u-1 pure-u-md-12-24 pure-u-lg-6-24">' +
         '<div class="box">' +
         /*jshint camelcase: false */
-        '<a href="' + post._link + '" class="blog-link"><h3>' + post['header_link/_text'] + '</h3></a>' +
-        '<p>' + post.text_1 + '...</p>' +
+        '<a href="' + post.link + '" class="blog-link"><h3>' + post['posttitle_link/_text'] + '</h3></a>' +
+        /* jshint -W069 */
+        '<p>' + post['postexcerpt_description'] + '...</p>' +
         '</div>' +
         '</div>');
     });

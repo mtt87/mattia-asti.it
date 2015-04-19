@@ -37,9 +37,7 @@ header {
   margin-left: 15px;
 }
 .contact-me-btn {
-  position: absolute;
-  right: 15px;
-  top: 25px;
+  display: none;
 }
 .title {
   color: #fff;
@@ -91,6 +89,12 @@ footer {
 }
 
 @media screen and (min-width: 48em) {
+  .contact-me-btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+  }
   .img-face {
     display: block;
     position: absolute;
